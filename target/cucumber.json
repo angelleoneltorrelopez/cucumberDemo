@@ -1,0 +1,143 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-09-06T07:11:38.032Z",
+        "line": 7,
+        "name": "Registro de formulario con Datos Validos",
+        "description": "",
+        "id": "registrar-formulario;registro-de-formulario-con-datos-validos",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3299248000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "que la web DEMOQA esta disponible",
+            "match": {
+              "location": "PasosDefinidos.FormularioDefinido.que_la_web_DEMOQA_esta_disponible()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5522115000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "registro los datos requeridos",
+            "match": {
+              "location": "PasosDefinidos.FormularioDefinido.registro_los_datos_requeridos()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1102204000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "doy Click en el boton",
+            "match": {
+              "location": "PasosDefinidos.FormularioDefinido.doy_click_en_el_boton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4398562000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "se muestran mis datos en la pantalla",
+            "match": {
+              "location": "PasosDefinidos.FormularioDefinido.se_muestran_mis_datos_en_la_pantalla()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-06T07:11:52.381Z",
+        "line": 13,
+        "name": "Visualizar datos requeridos",
+        "description": "",
+        "id": "registrar-formulario;visualizar-datos-requeridos",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2675123000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "que la web DEMOQA esta disponible",
+            "match": {
+              "location": "PasosDefinidos.FormularioDefinido.que_la_web_DEMOQA_esta_disponible()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 39000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "no se ingresan datos",
+            "match": {
+              "location": "PasosDefinidos.FormularioDefinido.no_se_ingresan_datos()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1089999000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "doy Click en el boton",
+            "match": {
+              "location": "PasosDefinidos.FormularioDefinido.doy_click_en_el_boton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11496660000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "no se muestra la tabla con los datos",
+            "match": {
+              "location": "PasosDefinidos.FormularioDefinido.no_se_muestra_la_tabla_con_los_datos()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 80801000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "se muestran los campos requeridos",
+            "match": {
+              "location": "PasosDefinidos.FormularioDefinido.se_muestran_los_campos_requeridos()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Registrar formulario",
+    "description": "    Yo un nuevo cliente\n    Quiero registrar mis datos\n    Para que tengan mi informacion actualizada",
+    "id": "registrar-formulario",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/formulario.feature",
+    "tags": []
+  }
+]
