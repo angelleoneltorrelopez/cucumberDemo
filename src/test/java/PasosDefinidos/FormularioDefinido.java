@@ -1,16 +1,11 @@
 package PasosDefinidos;
 
-import Auxiliary.TestBase;
+import Config.GetDriver;
 import POMs.Form;
 
 import io.cucumber.java.en.*;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-import java.util.concurrent.TimeUnit;
 
 public class FormularioDefinido {
 
@@ -22,13 +17,13 @@ public class FormularioDefinido {
     String gender = "Male";
     String mobileNumber = "1234567890";
 
-    TestBase testBase;
+    GetDriver getDriver;
     Form form;
 
     @Given("que la web DEMOQA esta disponible")
     public void que_la_web_DEMOQA_esta_disponible(){
-        testBase = new TestBase();
-        driver = testBase.driver;
+        getDriver = new GetDriver();
+        driver = getDriver.driver;
         form = new Form(driver);
         driver.navigate().to("https://demoqa.com/automation-practice-form");
     }
@@ -73,9 +68,7 @@ public class FormularioDefinido {
         driver.close();
     }
 
-
-
-
+    
     @When("no se ingresan datos")
     public void no_se_ingresan_datos() {
 

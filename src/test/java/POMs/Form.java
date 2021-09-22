@@ -1,6 +1,6 @@
 package POMs;
 
-import Auxiliary.GeneralMethods;
+import Config.Actions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,7 +12,7 @@ import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
  * @Created: 04/09/2021
  */
 
-public class Form extends GeneralMethods {
+public class Form extends Actions {
     @FindBy(id = "firstName")
     private WebElement firstName;
 
@@ -49,8 +49,8 @@ public class Form extends GeneralMethods {
     @FindBy(className = "was-validated")
     private WebElement alertRequired;
 
-    WebDriver driver;
-    AjaxElementLocatorFactory factory;
+    private WebDriver driver;
+    private AjaxElementLocatorFactory factory;
 
     public Form(WebDriver driver){
         this.driver = driver;
@@ -104,5 +104,9 @@ public class Form extends GeneralMethods {
 
     public boolean alertRequiredIsDisplayed(){
         return waitElementVisibility(driver, alertRequired, 5);
+    }
+
+    public void waitSecond(int second){
+        waitSeconds(second);
     }
 }
